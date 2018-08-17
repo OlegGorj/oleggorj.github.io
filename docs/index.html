@@ -36,7 +36,7 @@
       var getPresignedURL = function(content_type, callback) {
         $.ajax({
           type: 'POST',
-          url: 'YOUR_SERVERLESS_URL',
+          url: 'https://openwhisk.ng.bluemix.net/api/v1/web/c3cvnf0p%40ca.ibm.com_sandbox/default/upload.json?content_type=image/jpg',
           data: JSON.stringify({content_type: content_type}),
           contentType: 'application/json; charset=utf-8',
           dataType: 'json',
